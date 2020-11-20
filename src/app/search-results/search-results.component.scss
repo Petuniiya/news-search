@@ -1,0 +1,58 @@
+@import '../../styles.scss';
+
+a{
+    color:white;
+}
+
+a:hover{
+    color:lightgrey;
+}
+
+.card-secondary,
+::ng-deep .p-datatable .p-datatable-thead > tr > th,
+::ng-deep .p-datatable .p-datatable-tbody > tr ,
+::ng-deep .p-paginator,
+::ng-deep .p-dropdown .p-dropdown-trigger,
+::ng-deep .p-dropdown .p-dropdown-label,
+::ng-deep .p-dropdown-panel,
+::ng-deep .p-dropdown-panel .p-dropdown-items .p-dropdown-item{
+        background-color:#6c757d ;
+        color:white
+}
+
+::ng-deep .p-dropdown .p-dropdown-label{
+    border-bottom-right-radius:0;
+    border-top-right-radius:0;
+}
+
+::ng-deep .p-paginator .p-paginator-pages .p-paginator-page.p-highlight{
+    background-color:#6c757d ;
+    color:white;
+    border: 1px solid white;
+}
+
+::ng-deep .p-paginator .p-paginator-pages .p-paginator-page{
+    color:white;
+}
+::ng-deep .p-paginator .p-paginator-pages .p-paginator-page:not(.p-highlight):hover,
+::ng-deep .p-paginator .p-paginator-first:not(.p-disabled):not(.p-highlight):hover, 
+::ng-deep .p-paginator .p-paginator-prev:not(.p-disabled):not(.p-highlight):hover, 
+::ng-deep .p-paginator .p-paginator-next:not(.p-disabled):not(.p-highlight):hover, 
+::ng-deep .p-paginator .p-paginator-last:not(.p-disabled):not(.p-highlight):hover
+{
+    border: 1px solid white;
+    background-color: #6c757d;
+    color: white;
+}
+
+::ng-deep .p-link:focus,
+::ng-deep .p-dropdown-panel{
+    box-shadow: none;
+}
+
+::ng-deep .p-paginator .p-paginator-first, 
+::ng-deep .p-paginator .p-paginator-prev, 
+::ng-deep .p-paginator .p-paginator-next, 
+::ng-deep .p-paginator .p-paginator-last{
+    color:white;
+}

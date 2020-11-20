@@ -1,0 +1,19 @@
+<div class="row d-flex justify-content-center my-4">
+    <div class = "col-6 mt-4">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="input-group-text fa fa-search" id="basic-addon1 h"></span>
+            </div>
+            <input type="text" class="form-control" placeholder="...Search" [(ngModel)] = "searchTag"
+             aria-label="search" aria-describedby="basic-addon1" (change) = "onSearch()">
+          </div>
+    </div>
+</div>
+<div class =  "row d-flex justify-content-center my-4">
+  <div class = "col-7">
+    <ng-container >
+      <app-search-results [news] = "newsFound"></app-search-results>
+    </ng-container >
+  </div>
+  
+</div>

@@ -1,4 +1,8 @@
+import { CommonModule } from '@angular/common';
+import { HttpClient, HttpHandler } from '@angular/common/http';
 import { TestBed } from '@angular/core/testing';
+import { FormsModule } from '@angular/forms';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -6,6 +10,14 @@ describe('AppComponent', () => {
     await TestBed.configureTestingModule({
       declarations: [
         AppComponent
+      ],
+      imports: [
+        BrowserModule,
+        CommonModule,
+        FormsModule,
+      ],
+      providers: [
+        HttpClient,
       ],
     }).compileComponents();
   });
